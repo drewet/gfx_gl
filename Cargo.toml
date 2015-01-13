@@ -16,6 +16,7 @@
 
 name = "gfx_gl"
 version = "0.1.0"
+build = "build.rs"
 authors = [
 ]
 
@@ -23,5 +24,8 @@ authors = [
 name = "gfx_gl"
 path = "src/lib.rs"
 
-[dependencies.gl_generator]
+[build-dependencies.gl_generator]
+git = "https://github.com/bjz/gl-rs.git"
+
+[dependencies.gl_common]
 git = "https://github.com/bjz/gl-rs.git"
